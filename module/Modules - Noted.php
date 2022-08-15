@@ -12,6 +12,7 @@
 //@ REACT UI COMPONENT 
 //? react element; sama dgn DOM element, React.creactElement(/* type */, /* property */, /* content */);
 //? jsx; javascript expression, prosess react element -> html native
+//? <React.Fragment> / <> untuk membungkus reder tanpa div
 //? react component; dengan membuat fungsi yang mengembalikan React element mengunakan html native
 //? component properties; tag custom html dan pemanggilan fungsi javascript yg dapat memberikan beberapa param props, children
 //? composite component; kumpulan beberapa element ui, dipecah menjadi bebrapa element
@@ -21,4 +22,5 @@
 
 //@ PENGANTAR STATEFULL COMPONENT
 //? props; berasal dari luar komponen dan diharapkan tidak berubah, sedangkan data di dalam
-//? state; penyimpanan data yang perlu diinisialisasi di dalam komponen itu sendiri dan datanya boleh berubah. (event handler)
+//? state; form-penyimpanan data yang perlu diinisialisasi di dalam komponen itu sendiri dan datanya boleh berubah. (event handler)
+//? controlled component; Form yang sumber datanya dikontrol oleh React melalui component state
