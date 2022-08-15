@@ -18,3 +18,7 @@
 //? npx create-react-app my-app; to create react-app
 //? npm start; to running the app
 //? npm run build; mem-build proyek ke dalam berkas HTML, CSS, dan JS secara statis
+
+//@ PENGANTAR STATEFULL COMPONENT
+//? props; berasal dari luar komponen dan diharapkan tidak berubah, sedangkan data di dalam
+//? state; penyimpanan data yang perlu diinisialisasi di dalam komponen itu sendiri dan datanya boleh berubah. (event handler)
