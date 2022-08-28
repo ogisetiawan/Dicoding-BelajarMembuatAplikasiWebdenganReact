@@ -1,8 +1,14 @@
 import React from "react";
 import ArchiveMoveButton from "./ArchiveMoveButton";
 import DeleteButton from "./DeleteButton";
+import NotesEmpty from "./NotesEmpty";
 
 function NotesArchives({ notes, Delete, Move }) {
+  if(notes.length === 0){
+    return (
+      <NotesEmpty/>
+    )
+  }
 
     return (
       notes.map((note) => (

@@ -1,8 +1,15 @@
 import React from "react";
 import ArchiveMoveButton from "./ArchiveMoveButton";
 import DeleteButton from "./DeleteButton";
+import NotesEmpty from "./NotesEmpty";
 
 function NotesList({ notes, Delete, Archive }) {
+  if(notes.length === 0){
+    return (
+      <NotesEmpty/>
+    )
+  }
+
     //? get param (notes) and show with arraymap
     return (
       notes.map((note) => (

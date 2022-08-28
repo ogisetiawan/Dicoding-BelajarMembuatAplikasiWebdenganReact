@@ -5,7 +5,7 @@ import Title from "./NotesTitle";
 import Form from "./NotesForm";
 import List from "./NotesList";
 import Archive from "./NotesArchives";
-import { getData } from "../utils/data.js"; //? import data {object}
+import { getInitialData } from "../../utils/data.js"; //? import data {object}
 
 const authors = `OgiSetiawan`;
 
@@ -14,8 +14,8 @@ class NotesApp extends React.Component {
     super(props);
     //? init state
     this.state = {
-      notes: getData(), //?set and call data {object}
-      searchNotes: getData(), //?set and call data {object} for dummy state
+      notes: getInitialData(), //?set and call data {object}
+      searchNotes: getInitialData(), //?set and call data {object} for dummy state
     };
 
     //? init event binding
